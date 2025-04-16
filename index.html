@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<style>
+    #zone {
+        border: 5px solid rgb(236, 202, 202);
+        border-radius: 9px;
+        height: 50px;
+        background-color: white;
+    }
+
+    #Calculatrice {
+        border: 5px solid rgb(44, 40, 40);
+        border-radius: 9px;
+    }
+</style>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div id="Calculatrice" class="p-4">
+            <div id="zone" class="md-3 text-end p-2 m-3">
+
+            </div><br>
+            <!--col 1-->
+            <div class="row g-2">
+                <div class="col-3">
+                    <button onclick="ecrire('7')" class="btn btn-secondary p-3 w-100">7</button>
+                </div>
+                <div class="col-3">
+                    <button onclick="ecrire('8')" class="btn btn-secondary p-3 w-100">8</button>
+                </div>
+                <div class="col-3">
+                    <button onclick="ecrire('9')" class="btn btn-secondary p-3 w-100">9</button>
+                </div>
+                <div class="col-3">
+                    <button onclick="ecrire('+')" class="btn btn-secondary p-3 w-100">+</button>
+                </div>
+            </div><br>
+            <!--col 2-->
+            <div class="row g-2">
+                <div class="col-3">
+                    <button onclick="ecrire('4')" class="btn btn-secondary p-3 w-100">4</button>
+                </div>
+                <div class="col-3">
+                    <button onclick="ecrire('5')" class="btn btn-secondary p-3 w-100">5</button>
+                </div>
+                <div class="col-3">
+                    <button onclick="ecrire('6')" class="btn btn-secondary p-3 w-100">6</button>
+                </div>
+                <div class="col-3">
+                    <button onclick="ecrire('-')" class="btn btn-secondary p-3 w-100">-</button>
+                </div>
+            </div><br>
+            <!--col 3-->
+            <div class="row g-2">
+                <div class="col-3">
+                    <button onclick="ecrire('1')" class="btn btn-secondary p-3 w-100">1</button>
+                </div>
+                <div class="col-3">
+                    <button onclick="ecrire('2')" class="btn btn-secondary p-3 w-100">2</button>
+                </div>
+                <div class="col-3">
+                    <button onclick="ecrire('3')" class="btn btn-secondary p-3 w-100">3</button>
+                </div>
+                <div class="col-3">
+                    <button onclick="ecrire('*')" class="btn btn-secondary p-3 w-100">*</button>
+                </div>
+            </div><br>
+            <!--col 4-->
+            <div class="row g-2">
+                <div class="col-3">
+                    <button onclick="supprimer('C')" class="btn btn-danger p-3 w-100">C</button>
+                </div>
+                <div class="col-3">
+                    <button onclick="ecrire('0')" class="btn btn-secondary p-3 w-100">0</button>
+                </div>
+                <div class="col-3">
+                    <button onclick="ecrire('.')" class="btn btn-secondary p-3 w-100">.</button>
+                </div>
+                <div class="col-3">
+                    <button onclick="ecrire('/')" class="btn btn-secondary p-3 w-100">/</button>
+                </div>
+            </div><br>
+            <!--col 5-->
+            <div class="row g-2">
+                <div class="col">
+                    <button onclick="calculer('=')" class="btn btn-success p-3 w-75">=</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
